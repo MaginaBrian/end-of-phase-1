@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 20px;
     background-color: var(--primary-white);
-    background-image: url('../images/vote6.png');
+    background-image: url('../images/vote3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,17 +29,15 @@ body {
     height: auto;
 }
 
-h1 {
+h1,h2 {
     text-align: center;
     color: #BB9DF5;
     margin-bottom: 20px;
     font-family: var(--header-font);
 }
 
-h2 {
-    font-family: var(--header-font);
-    color: #333;
-}
+
+
 
 .login-section, .voting-section, .results-section {
     margin: 20px 0;
@@ -76,7 +74,7 @@ input[type="text"], input[type="password"] {
 
 button, .submit-btn {
     background-color: #3498db;
-    color: white;
+    color: var(--primary-white);
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -86,13 +84,13 @@ button, .submit-btn {
 }
 
 button:hover, .submit-btn:hover {
-    background-color: #2980b9;
+    background-color: #14DE09;
 }
 
-/* Specific styling for reset button */
+
 .reset-btn {
-    background-color: var(--tertiary-color); /* Using the red from root variables */
-    color: white;
+    background-color: var(--tertiary-color); 
+    color: var(--primary-white);
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -102,7 +100,7 @@ button:hover, .submit-btn:hover {
 }
 
 .reset-btn:hover {
-    background-color: #c1171f; /* Darker shade of red for hover */
+    background-color: #14DE09
 }
 
 .results-section p {

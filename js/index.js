@@ -58,7 +58,7 @@ function showCandidates() {
         form.innerHTML += `
             <label>
                 <input type="radio" name="candidate" value="${candidate.name}">
-                <img src="${candidate.imageUrl}" alt="${candidate.name}" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 80%;">
+                <img src="${candidate.imageUrl}" alt="${candidate.name}" style="width: 90px; height: 90px; margin-right: 10px; border-radius: 80%;">
                 ${candidate.name}
             </label><br>
         `;
@@ -71,7 +71,7 @@ function showResults() {
     votingSystem.candidates.forEach(candidate => {
         results.innerHTML += `
             <p>
-                <img src="${candidate.imageUrl}" alt="${candidate.name}" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 80%;">
+                <img src="${candidate.imageUrl}" alt="${candidate.name}" style="width: 90px; height: 90px; margin-right: 10px; border-radius: 80%;">
                 ${candidate.name}: <span>${votingSystem.votes[candidate.name] || 0}</span> votes
             </p>
         `;
@@ -147,7 +147,7 @@ function resetResults() {
     })
     .then(response => {
         if (response.ok) {
-            // Reset local state
+            
             votingSystem.votes = {};
             votingSystem.votedUsers = [];
             votingSystem.candidates.forEach(candidate => {
