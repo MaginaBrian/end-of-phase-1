@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Voting System</h1>
+
+        <div class="login-section" id="loginSection">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="handleLogin()">Login</button>
+        </div>
+
+        <div class="voting-section" id="votingSection" style="display: none;">
+            <h2>Cast Your Vote</h2>
+            <form id="voteForm" class="candidates"></form>
+            <button onclick="handleVoteSubmit()" class="submit-btn">Submit Vote</button>
+            <!-- Removed <button id="resetButton">Reset Voting</button> -->
+        </div>
+
+        <div class="results-section" id="resultsSection">
+            <h2>Current Results</h2>
+            <div id="results"></div>
+            <p>Total Votes: <span id="totalVotes">0</span></p>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

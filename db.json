@@ -1,0 +1,41 @@
+{
+  "users": {
+    "user1": "pass123",
+    "user2": "pass456",
+    "user3": "pass789"
+  },
+  "candidates": [
+    {
+      "id": "1",
+      "name": "Candidate A"
+    },
+    {
+      "id": "2",
+      "name": "Candidate B"
+    },
+    {
+      "id": "3",
+      "name": "Candidate C"
+    }
+  ],
+  "votes": [
+    {
+      "id": "d909",
+      "user": "user2",
+      "candidate": "Candidate A",
+      "timestamp": "2025-03-26T14:29:50.756Z"
+    },
+    {
+      "id": "444f",
+      "user": "user3",
+      "candidate": "Candidate A",
+      "timestamp": "2025-03-26T14:43:50.432Z"
+    },
+    {
+      "id": "6254",
+      "user": "user1",
+      "candidate": "Candidate A",
+      "timestamp": "2025-03-26T14:44:53.193Z"
+    }
+  ]
+}
