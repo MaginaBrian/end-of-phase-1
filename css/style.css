@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+	--header-font: 'Oswald', serif;
+	--body-font: 'Montserrat', serif;
+	--primary-white: #f5f5f5;
+	--tertiary-color: #e31c25;
+    
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--body-font);
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color:var(--primary-white);
     background-image: url('../images/vote6.png');
     background-size: cover;
     background-position: center;
@@ -13,22 +22,24 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var(--primary-white);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: auto;
+    
 }
 
 h1 {
     text-align: center;
-    color: #2c3e50;
+    color: #BB9DF5;
     margin-bottom: 20px;
 }
 
 .login-section, .voting-section, .results-section {
     margin: 20px 0;
     padding: 20px;
-    border: 1px solid #ecf0f1;
+    border: 1px solid  #FFB0B0;
     border-radius: 4px;
     background-color: #fafafa;
 }
@@ -41,6 +52,7 @@ input[type="text"], input[type="password"] {
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
+    display: flex;
 }
 
 .candidates {

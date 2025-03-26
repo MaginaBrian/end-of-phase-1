@@ -1,41 +1,35 @@
 {
   "users": {
-    "user1": "pass123",
-    "user2": "pass456",
-    "user3": "pass789"
+    "Brian": "pass1",
+    "Kassim": "pass2",
+    "Oliver": "pass3",
+    "Sonia": "pass4",
+    "Lydiah": "pass5",
+    "Shark": "pass6"
   },
   "candidates": [
     {
       "id": "1",
-      "name": "Candidate A"
+      "name": "Candidate A",
+      "imageUrl": "https://images.unsplash.com/photo-1669071437506-a3e4671f83e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJhcmFjayUyMG9iYW1hfGVufDB8fDB8fHww"
     },
     {
       "id": "2",
-      "name": "Candidate B"
+      "name": "Candidate B",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1738931679846-7e2c9e298709?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGZhbW91cyUyMHBvbGl0aWNpYW58ZW58MHx8MHx8fDA%3D"
     },
     {
       "id": "3",
-      "name": "Candidate C"
+      "name": "Candidate C",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1692873058899-624c0f96c5de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEzfHxmYW1vdXMlMjBwb2xpdGljaWFufGVufDB8fDB8fHww"
     }
   ],
   "votes": [
     {
-      "id": "d909",
-      "user": "user2",
-      "candidate": "Candidate A",
-      "timestamp": "2025-03-26T14:29:50.756Z"
-    },
-    {
-      "id": "444f",
-      "user": "user3",
-      "candidate": "Candidate A",
-      "timestamp": "2025-03-26T14:43:50.432Z"
-    },
-    {
-      "id": "6254",
-      "user": "user1",
-      "candidate": "Candidate A",
-      "timestamp": "2025-03-26T14:44:53.193Z"
+      "id": "cedd",
+      "user": "brian",
+      "candidate": "Candidate B",
+      "timestamp": "2025-03-26T21:09:21.055Z"
     }
   ]
 }

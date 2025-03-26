@@ -14,7 +14,6 @@ function startVotingSystem() {
     loadUsers();
     loadCandidates();
     loadVotes();
-    
 }
 
 function loadUsers() {
@@ -59,6 +58,7 @@ function showCandidates() {
         form.innerHTML += `
             <label>
                 <input type="radio" name="candidate" value="${candidate.name}">
+                <img src="${candidate.imageUrl}" alt="${candidate.name}" style="width: 50px; height: 50px; margin-right: 10px;">
                 ${candidate.name}
             </label><br>
         `;
@@ -70,7 +70,10 @@ function showResults() {
     results.innerHTML = '';
     votingSystem.candidates.forEach(candidate => {
         results.innerHTML += `
-            <p>${candidate.name}: <span>${votingSystem.votes[candidate.name] || 0}</span> votes</p>
+            <p>
+                <img src="${candidate.imageUrl}" alt="${candidate.name}" style="width: 50px; height: 50px;  margin-right: 10px;">
+                ${candidate.name}: <span>${votingSystem.votes[candidate.name] || 0}</span> votes
+            </p>
         `;
     });
     document.getElementById('totalVotes').textContent = votingSystem.votedUsers.length;
@@ -100,9 +103,6 @@ function submitVote(candidate) {
     })
     .catch(error => console.error('Error submitting vote:', error));
 }
-
-
-
 
 function handleLogin() {
     const username = document.getElementById('username').value;
