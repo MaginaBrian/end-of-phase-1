@@ -21,13 +21,13 @@
             <h2>Cast Your Vote</h2>
             <form id="voteForm" class="candidates"></form>
             <button onclick="handleVoteSubmit()" class="submit-btn">Submit Vote</button>
-            
         </div>
 
         <div class="results-section" id="resultsSection">
             <h2>Current Results</h2>
             <div id="results"></div>
             <p>Total Votes: <span id="totalVotes">0</span></p>
+            <button onclick="resetResults()" class="reset-btn">Reset Results</button>
         </div>
     </div>
     <script src="js/index.js"></script>
