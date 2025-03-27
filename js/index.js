@@ -137,27 +137,3 @@ function handleVoteSubmit() {
 
     submitVote(selected.value);
 }
-
-function resetResults() {
-    fetch('http://localhost:3000/votes', {
-        method: 'DELETE',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-    })
-    .then(response => {
-        if (response.ok) {
-            
-            votingSystem.votes = {};
-            votingSystem.votedUsers = [];
-            votingSystem.candidates.forEach(candidate => {
-                votingSystem.votes[candidate.name] = 0;
-            });
-            showResults();
-            alert('Voting results have been reset!');
-        } else {
-            alert('Failed to reset voting results!');
-        }
-    })
-    .catch(error => console.error('Error resetting votes:', error));
-}

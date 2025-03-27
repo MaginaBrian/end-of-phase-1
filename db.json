@@ -30,6 +30,18 @@
       "user": "brian",
       "candidate": "Candidate B",
       "timestamp": "2025-03-26T21:09:21.055Z"
+    },
+    {
+      "id": "4244",
+      "user": "Kassim",
+      "candidate": "Candidate A",
+      "timestamp": "2025-03-27T14:02:14.236Z"
+    },
+    {
+      "id": "8981",
+      "user": "Oliver",
+      "candidate": "Candidate B",
+      "timestamp": "2025-03-27T14:37:43.723Z"
     }
   ]
 }
