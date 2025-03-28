@@ -17,7 +17,7 @@ function startVotingSystem() {
 }
 
 function loadUsers() {
-    fetch('http://localhost:3000/users')
+    fetch('https://end-of-phase-1-json-server-mtgr.vercel.app/users')
         .then(response => response.json())
         .then(data => {
             votingSystem.users = data;
@@ -26,7 +26,7 @@ function loadUsers() {
 }
 
 function loadCandidates() {
-    fetch('http://localhost:3000/candidates')
+    fetch('https://end-of-phase-1-json-server-mtgr.vercel.app/candidates')
         .then(response => response.json())
         .then(data => {
             votingSystem.candidates = data;
@@ -39,7 +39,7 @@ function loadCandidates() {
 }
 
 function loadVotes() {
-    fetch('http://localhost:3000/votes')
+    fetch('https://end-of-phase-1-json-server-mtgr.vercel.app/votes')
         .then(response => response.json())
         .then(votes => {
             votes.forEach(vote => {
@@ -80,7 +80,7 @@ function showResults() {
 }
 
 function submitVote(candidate) {
-    fetch('http://localhost:3000/votes', {
+    fetch('https://end-of-phase-1-json-server-mtgr.vercel.app/votes', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
